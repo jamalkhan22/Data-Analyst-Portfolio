@@ -1,5 +1,7 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,619 +9,788 @@
     <title>Jamal Khan | Data Analyst Portfolio</title>
 
     <meta name="description"
-          content="Jamal Khan - B.Sc IT student and aspiring Data Analyst.">
+        content="Jamal Khan - Data Analyst Portfolio">
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background: #f5f7fb;
-            color: #172033;
-            line-height: 1.6;
-        }
-
-        nav {
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            background: white;
-            padding: 16px 8%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-        }
-
-        .logo {
-            font-size: 22px;
-            font-weight: bold;
-        }
-
-        nav ul {
-            display: flex;
-            list-style: none;
-            gap: 22px;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #172033;
-            font-weight: 600;
-        }
-
-        nav a:hover {
-            color: #2563eb;
-        }
-
-        .hero {
-            min-height: 90vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 50px 20px;
-            background: linear-gradient(135deg, #eef4ff, #ffffff);
-        }
-
-        .hero h1 {
-            font-size: 52px;
-            margin-bottom: 12px;
-        }
-
-        .hero h1 span {
-            color: #2563eb;
-        }
-
-        .hero h2 {
-            font-size: 26px;
-            margin-bottom: 18px;
-        }
-
-        .hero p {
-            max-width: 700px;
-            margin: auto;
-            color: #5d6675;
-            font-size: 18px;
-        }
-
-        .buttons {
-            margin-top: 28px;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 12px 24px;
-            margin: 5px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .primary {
-            background: #2563eb;
-            color: white;
-        }
-
-        .secondary {
-            border: 2px solid #2563eb;
-            color: #2563eb;
-            background: white;
-        }
-
-        section {
-            padding: 75px 8%;
-        }
-
-        .section-title {
-            text-align: center;
-            font-size: 34px;
-            margin-bottom: 40px;
-        }
-
-        .about {
-            max-width: 850px;
-            margin: auto;
-            text-align: center;
-            font-size: 18px;
-            color: #596273;
-        }
-
-        .skills {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 18px;
-            max-width: 950px;
-            margin: auto;
-        }
-
-        .skill {
-            background: white;
-            padding: 22px;
-            text-align: center;
-            border-radius: 12px;
-            font-weight: bold;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.07);
-            transition: 0.3s;
-        }
-
-        .skill:hover {
-            transform: translateY(-5px);
-        }
-
-        .projects {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
-        }
-
-        .project {
-            background: white;
-            padding: 26px;
-            border-radius: 14px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-        }
-
-        .project h3 {
-            color: #2563eb;
-            margin-bottom: 12px;
-        }
-
-        .project p {
-            color: #5d6675;
-            margin-bottom: 15px;
-        }
-
-        .tag {
-            display: inline-block;
-            background: #eef4ff;
-            color: #2563eb;
-            padding: 5px 10px;
-            margin: 3px;
-            border-radius: 5px;
-            font-size: 13px;
-        }
-
-        .project a {
-            display: inline-block;
-            margin-top: 15px;
-            text-decoration: none;
-            color: #2563eb;
-            font-weight: bold;
-        }
-
-        .certificates {
-            max-width: 850px;
-            margin: auto;
-        }
-
-        .certificate {
-            background: white;
-            padding: 20px;
-            margin-bottom: 15px;
-            border-radius: 10px;
-            box-shadow: 0 3px 12px rgba(0,0,0,0.07);
-        }
-
-        .certificate h3 {
-            margin-bottom: 5px;
-        }
-
-        .certificate p {
-            color: #5d6675;
-        }
-
-        .contact {
-            text-align: center;
-            background: #eef4ff;
-        }
-
-        .contact a {
-            display: inline-block;
-            margin: 8px;
-            text-decoration: none;
-            color: #2563eb;
-            font-weight: bold;
-        }
-
-        footer {
-            text-align: center;
-            padding: 25px;
-            background: #172033;
-            color: white;
-        }
-
-        @media (max-width: 700px) {
-
-            nav {
-                flex-direction: column;
-                gap: 12px;
-            }
-
-            nav ul {
-                flex-wrap: wrap;
-                justify-content: center;
-                gap: 12px;
-            }
-
-            .hero h1 {
-                font-size: 38px;
-            }
-
-            .hero h2 {
-                font-size: 21px;
-            }
-
-            section {
-                padding: 55px 6%;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- NAVIGATION -->
-<nav>
-    <div class="logo">Jamal Khan</div>
+    <!-- ================= NAVBAR ================= -->
 
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#certificates">Certificates</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
+    <header class="navbar">
+
+        <div class="logo">
+            Jamal<span>.</span>
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#certificates">Certificates</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </header>
 
 
-<!-- HOME -->
-<section class="hero" id="home">
+    <!-- ================= HOME ================= -->
 
-    <div>
+    <section id="home" class="hero">
 
-        <h1>
-            Hi, I'm <span>Jamal Khan</span>
-        </h1>
+        <div class="hero-text">
 
-        <h2>
-            Aspiring Data Analyst
-        </h2>
+            <p class="small-title">
+                HELLO, I'M
+            </p>
+
+            <h1>
+                Jamal Khan
+            </h1>
+
+            <h2>
+                Aspiring Data Analyst
+            </h2>
+
+            <p>
+                B.Sc. IT student passionate about Data Analytics,
+                Python, SQL, Excel and Power BI. I enjoy turning
+                data into meaningful insights and building
+                practical projects.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#projects" class="btn">
+                    View Projects
+                </a>
+
+                <a href="Jamal_Khan_Resume.pdf"
+                   class="btn outline"
+                   target="_blank">
+                    View Resume
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-card">
+
+            <div class="profile-circle">
+                JK
+            </div>
+
+            <h3>
+                Data Analyst
+            </h3>
+
+            <p>
+                Python • SQL • Excel • Power BI
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section id="about" class="section">
+
+        <div class="container">
+
+            <p class="section-subtitle">
+                ABOUT ME
+            </p>
+
+            <h2 class="section-title">
+                Who I Am
+            </h2>
+
+            <div class="about-grid">
+
+                <div>
+
+                    <p>
+                        I'm <strong>Jamal Khan</strong>, a B.Sc. IT student
+                        building my career in Data Analytics.
+                    </p>
+
+                    <p>
+                        I am developing practical skills in Python,
+                        Pandas, SQL, Excel and Power BI. My focus is
+                        on understanding data, cleaning it, analyzing
+                        it and presenting useful insights.
+                    </p>
+
+                    <p>
+                        Alongside Data Analytics, I have also gained
+                        experience in software development through
+                        internships and technical projects.
+                    </p>
+
+                </div>
+
+
+                <div class="about-box">
+
+                    <div>
+                        <strong>B.Sc. IT</strong>
+                        <span>Education</span>
+                    </div>
+
+                    <div>
+                        <strong>Data Analytics</strong>
+                        <span>Career Goal</span>
+                    </div>
+
+                    <div>
+                        <strong>Python + SQL</strong>
+                        <span>Core Skills</span>
+                    </div>
+
+                    <div>
+                        <strong>Power BI</strong>
+                        <span>Visualization</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SKILLS ================= -->
+
+    <section id="skills" class="section dark-section">
+
+        <div class="container">
+
+            <p class="section-subtitle">
+                MY SKILLS
+            </p>
+
+            <h2 class="section-title">
+                Technical Skills
+            </h2>
+
+
+            <div class="skills-grid">
+
+                <div class="skill-card">
+                    <div class="skill-icon">🐍</div>
+                    <h3>Python</h3>
+                    <p>
+                        Python programming and data analysis.
+                    </p>
+                </div>
+
+
+                <div class="skill-card">
+                    <div class="skill-icon">📊</div>
+                    <h3>Pandas</h3>
+                    <p>
+                        Data cleaning, manipulation and analysis.
+                    </p>
+                </div>
+
+
+                <div class="skill-card">
+                    <div class="skill-icon">🗄️</div>
+                    <h3>SQL</h3>
+                    <p>
+                        Queries, joins, aggregation and data extraction.
+                    </p>
+                </div>
+
+
+                <div class="skill-card">
+                    <div class="skill-icon">📈</div>
+                    <h3>Excel</h3>
+                    <p>
+                        Formulas, Pivot Tables, charts and analysis.
+                    </p>
+                </div>
+
+
+                <div class="skill-card">
+                    <div class="skill-icon">📉</div>
+                    <h3>Power BI</h3>
+                    <p>
+                        Dashboards, visualization and DAX basics.
+                    </p>
+                </div>
+
+
+                <div class="skill-card">
+                    <div class="skill-icon">🔢</div>
+                    <h3>NumPy</h3>
+                    <p>
+                        Numerical computing and data processing.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= EXPERIENCE ================= -->
+
+    <section id="experience" class="section">
+
+        <div class="container">
+
+            <p class="section-subtitle">
+                EXPERIENCE
+            </p>
+
+            <h2 class="section-title">
+                Internship Experience
+            </h2>
+
+
+            <div class="timeline">
+
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="experience-card">
+
+                        <span class="experience-date">
+                            Internship
+                        </span>
+
+                        <h3>
+                            Junior Software Developer Intern
+                        </h3>
+
+                        <h4>
+                            Surfboard
+                        </h4>
+
+                        <p>
+                            Gained practical experience in software
+                            development, working on technical tasks
+                            and projects as part of an internship.
+                        </p>
+
+                        <div class="tags">
+                            <span>Software Development</span>
+                            <span>Web Development</span>
+                            <span>GitHub</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="experience-card">
+
+                        <span class="experience-date">
+                            Virtual Experience
+                        </span>
+
+                        <h3>
+                            Data Visualisation
+                        </h3>
+
+                        <h4>
+                            Tata Group — Forage
+                        </h4>
+
+                        <p>
+                            Completed a virtual experience focused on
+                            data visualisation and business insights.
+                        </p>
+
+                        <div class="tags">
+                            <span>Data Visualisation</span>
+                            <span>Forage</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="experience-card">
+
+                        <span class="experience-date">
+                            Virtual Experience
+                        </span>
+
+                        <h3>
+                            Data Analytics
+                        </h3>
+
+                        <h4>
+                            Deloitte — Forage
+                        </h4>
+
+                        <p>
+                            Completed a data analytics virtual
+                            experience involving analytical tasks
+                            and business data.
+                        </p>
+
+                        <div class="tags">
+                            <span>Data Analytics</span>
+                            <span>Forage</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PROJECTS ================= -->
+
+    <section id="projects" class="section dark-section">
+
+        <div class="container">
+
+            <p class="section-subtitle">
+                MY WORK
+            </p>
+
+            <h2 class="section-title">
+                Featured Projects
+            </h2>
+
+
+            <div class="projects-grid">
+
+
+                <!-- Project 1 -->
+
+                <div class="project-card">
+
+                    <div class="project-number">
+                        01
+                    </div>
+
+                    <h3>
+                        JobLens
+                    </h3>
+
+                    <p>
+                        Job Tracker with Resume Analyzer designed
+                        to help users track job applications and
+                        analyze resumes.
+                    </p>
+
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Node.js</span>
+                    </div>
+
+                    <a
+                        href="https://job-tracker-with-resume-analyzer-2.onrender.com"
+                        target="_blank"
+                        class="project-link">
+                        Live Project →
+                    </a>
+
+                </div>
+
+
+                <!-- Project 2 -->
+
+                <div class="project-card">
+
+                    <div class="project-number">
+                        02
+                    </div>
+
+                    <h3>
+                        Sales Data Analysis
+                    </h3>
+
+                    <p>
+                        Data analysis project focused on sales
+                        performance, revenue trends and business
+                        insights.
+                    </p>
+
+                    <div class="tags">
+                        <span>Python</span>
+                        <span>Pandas</span>
+                        <span>Excel</span>
+                    </div>
+
+                    <a href="#"
+                       class="project-link">
+                        GitHub Project →
+                    </a>
+
+                </div>
+
+
+                <!-- Project 3 -->
+
+                <div class="project-card">
+
+                    <div class="project-number">
+                        03
+                    </div>
+
+                    <h3>
+                        HR Analytics Dashboard
+                    </h3>
+
+                    <p>
+                        Interactive dashboard concept for analyzing
+                        employee data and HR-related metrics.
+                    </p>
+
+                    <div class="tags">
+                        <span>Power BI</span>
+                        <span>Excel</span>
+                        <span>DAX</span>
+                    </div>
+
+                    <a href="#"
+                       class="project-link">
+                        Dashboard →
+                    </a>
+
+                </div>
+
+
+                <!-- Project 4 -->
+
+                <div class="project-card">
+
+                    <div class="project-number">
+                        04
+                    </div>
+
+                    <h3>
+                        E-Commerce Analysis
+                    </h3>
+
+                    <p>
+                        Analysis of e-commerce data to understand
+                        customers, orders and sales performance.
+                    </p>
+
+                    <div class="tags">
+                        <span>SQL</span>
+                        <span>Python</span>
+                        <span>Power BI</span>
+                    </div>
+
+                    <a href="#"
+                       class="project-link">
+                        GitHub Project →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CERTIFICATES ================= -->
+
+    <section id="certificates" class="section">
+
+        <div class="container">
+
+            <p class="section-subtitle">
+                CERTIFICATIONS
+            </p>
+
+            <h2 class="section-title">
+                Certificates & Programs
+            </h2>
+
+
+            <div class="certificate-grid">
+
+
+                <div class="certificate-card">
+
+                    <div class="certificate-icon">
+                        🏆
+                    </div>
+
+                    <h3>
+                        Junior Software Developer
+                    </h3>
+
+                    <p>
+                        Internship Certificate — Surfboard
+                    </p>
+
+                    <a href="#" target="_blank">
+                        View Certificate →
+                    </a>
+
+                </div>
+
+
+                <div class="certificate-card">
+
+                    <div class="certificate-icon">
+                        📊
+                    </div>
+
+                    <h3>
+                        Tata Data Visualisation
+                    </h3>
+
+                    <p>
+                        Virtual Experience Programme — Forage
+                    </p>
+
+                    <a href="#" target="_blank">
+                        View Certificate →
+                    </a>
+
+                </div>
+
+
+                <div class="certificate-card">
+
+                    <div class="certificate-icon">
+                        📈
+                    </div>
+
+                    <h3>
+                        Deloitte Data Analytics
+                    </h3>
+
+                    <p>
+                        Virtual Experience Programme — Forage
+                    </p>
+
+                    <a href="#" target="_blank">
+                        View Certificate →
+                    </a>
+
+                </div>
+
+
+                <div class="certificate-card">
+
+                    <div class="certificate-icon">
+                        🍃
+                    </div>
+
+                    <h3>
+                        MongoDB
+                    </h3>
+
+                    <p>
+                        MongoDB course / Skillathon
+                    </p>
+
+                    <a href="#" target="_blank">
+                        View Certificate →
+                    </a>
+
+                </div>
+
+
+                <div class="certificate-card">
+
+                    <div class="certificate-icon">
+                        💻
+                    </div>
+
+                    <h3>
+                        Full Stack Developer
+                    </h3>
+
+                    <p>
+                        Full Stack Development Certificate
+                    </p>
+
+                    <a href="#" target="_blank">
+                        View Certificate →
+                    </a>
+
+                </div>
+
+
+                <div class="certificate-card">
+
+                    <div class="certificate-icon">
+                        🎓
+                    </div>
+
+                    <h3>
+                        Skill India / EdQuest
+                    </h3>
+
+                    <p>
+                        Junior Software Developer related certification
+                    </p>
+
+                    <a href="#" target="_blank">
+                        View Certificate →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= RESUME ================= -->
+
+    <section class="resume-section">
+
+        <div class="container resume-content">
+
+            <div>
+
+                <p class="section-subtitle">
+                    MY RESUME
+                </p>
+
+                <h2>
+                    Want to know more about me?
+                </h2>
+
+                <p>
+                    Check out my resume for my education,
+                    skills, projects, certifications and experience.
+                </p>
+
+            </div>
+
+            <a href="Jamal_Khan_Resume.pdf"
+               target="_blank"
+               class="btn">
+                View My Resume →
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact" class="section dark-section">
+
+        <div class="container">
+
+            <p class="section-subtitle">
+                CONTACT
+            </p>
+
+            <h2 class="section-title">
+                Let's Connect
+            </h2>
+
+            <p class="contact-description">
+                I'm open to internships, entry-level opportunities,
+                projects and professional networking.
+            </p>
+
+
+            <div class="contact-grid">
+
+                <a
+                    href="https://github.com/khanjamal2307-ops"
+                    target="_blank"
+                    class="contact-card">
+
+                    <span>GitHub</span>
+                    <small>
+                        View my repositories →
+                    </small>
+
+                </a>
+
+
+                <a
+                    href="#"
+                    class="contact-card">
+
+                    <span>LinkedIn</span>
+                    <small>
+                        Connect with me →
+                    </small>
+
+                </a>
+
+
+                <a
+                    href="mailto:your-email@example.com"
+                    class="contact-card">
+
+                    <span>Email</span>
+                    <small>
+                        Send me an email →
+                    </small>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
 
         <p>
-            B.Sc IT Final Year student passionate about Data Analytics,
-            Business Intelligence and turning data into meaningful insights.
+            © 2026 Jamal Khan
         </p>
-
-        <div class="buttons">
-
-            <a href="#projects" class="btn primary">
-                View Projects
-            </a>
-
-            <a href="#contact" class="btn secondary">
-                Contact Me
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ABOUT -->
-<section id="about">
-
-    <h2 class="section-title">
-        About Me
-    </h2>
-
-    <div class="about">
 
         <p>
-            I am a B.Sc IT Final Year student interested in building a
-            career in Data Analytics. I am developing my skills in
-            Excel, SQL, Power BI and Python to analyze data and create
-            useful business insights.
+            Data Analyst Portfolio
         </p>
 
-        <br>
+    </footer>
 
-        <p>
-            I enjoy working with datasets, identifying patterns,
-            creating visualizations and presenting insights that can
-            support better business decisions.
-        </p>
 
-    </div>
-
-</section>
-
-
-<!-- SKILLS -->
-<section id="skills">
-
-    <h2 class="section-title">
-        Skills
-    </h2>
-
-    <div class="skills">
-
-        <div class="skill">Excel</div>
-
-        <div class="skill">SQL</div>
-
-        <div class="skill">Power BI</div>
-
-        <div class="skill">Python</div>
-
-        <div class="skill">Pandas</div>
-
-        <div class="skill">NumPy</div>
-
-        <div class="skill">Matplotlib</div>
-
-        <div class="skill">HTML</div>
-
-        <div class="skill">CSS</div>
-
-        <div class="skill">JavaScript</div>
-
-        <div class="skill">MongoDB</div>
-
-        <div class="skill">GitHub</div>
-
-    </div>
-
-</section>
-
-
-<!-- PROJECTS -->
-<section id="projects">
-
-    <h2 class="section-title">
-        Projects
-    </h2>
-
-    <div class="projects">
-
-
-        <!-- PROJECT 1 -->
-        <div class="project">
-
-            <h3>Retail Sales Analysis</h3>
-
-            <p>
-                Analysis of retail sales data to understand revenue,
-                sales trends, product performance and business insights.
-            </p>
-
-            <span class="tag">Excel</span>
-            <span class="tag">SQL</span>
-            <span class="tag">Power BI</span>
-
-            <br>
-
-            <a href="#" target="_blank">
-                View Project →
-            </a>
-
-        </div>
-
-
-        <!-- PROJECT 2 -->
-        <div class="project">
-
-            <h3>Sales Analysis Dashboard</h3>
-
-            <p>
-                Interactive dashboard for analyzing sales performance,
-                revenue trends, products and regional performance.
-            </p>
-
-            <span class="tag">Power BI</span>
-            <span class="tag">SQL</span>
-            <span class="tag">Excel</span>
-
-            <br>
-
-            <a href="#" target="_blank">
-                View Project →
-            </a>
-
-        </div>
-
-
-        <!-- PROJECT 3 -->
-        <div class="project">
-
-            <h3>Banking Loan Analysis</h3>
-
-            <p>
-                Analytics project exploring loan applications,
-                customer information, approval trends and loan performance.
-            </p>
-
-            <span class="tag">SQL</span>
-            <span class="tag">Power BI</span>
-
-            <br>
-
-            <a href="#" target="_blank">
-                View Project →
-            </a>
-
-        </div>
-
-
-        <!-- PROJECT 4 -->
-        <div class="project">
-
-            <h3>E-commerce Data Analysis</h3>
-
-            <p>
-                Python-based analysis of e-commerce data to discover
-                customer, product and revenue insights.
-            </p>
-
-            <span class="tag">Python</span>
-            <span class="tag">Pandas</span>
-            <span class="tag">Matplotlib</span>
-
-            <br>
-
-            <a href="#" target="_blank">
-                View Project →
-            </a>
-
-        </div>
-
-
-        <!-- PROJECT 5 -->
-        <div class="project">
-
-            <h3>JobLens – Job Tracker</h3>
-
-            <p>
-                A web-based job tracking project created to organize
-                job applications and manage the job search process.
-            </p>
-
-            <span class="tag">Web Development</span>
-            <span class="tag">MongoDB</span>
-
-            <br>
-
-            <a href="https://job-tracker-with-resume-analyzer-2.onrender.com"
-               target="_blank">
-                Live Project →
-            </a>
-
-            <br>
-
-            <a href="https://github.com/khanjamal2307-ops"
-               target="_blank">
-                GitHub →
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- CERTIFICATES -->
-<section id="certificates">
-
-    <h2 class="section-title">
-        Certifications & Experience
-    </h2>
-
-    <div class="certificates">
-
-
-        <div class="certificate">
-
-            <h3>
-                Tata Data Visualisation Virtual Experience Programme
-            </h3>
-
-            <p>
-                Forage Virtual Experience
-            </p>
-
-        </div>
-
-
-        <div class="certificate">
-
-            <h3>
-                Deloitte Data Analytics Virtual Experience
-            </h3>
-
-            <p>
-                Forage Virtual Experience
-            </p>
-
-        </div>
-
-
-        <div class="certificate">
-
-            <h3>
-                Junior Software Developer Internship
-            </h3>
-
-            <p>
-                Surfboard Internship
-            </p>
-
-        </div>
-
-
-        <div class="certificate">
-
-            <h3>
-                Full Stack Developer Certificate
-            </h3>
-
-            <p>
-                Full Stack Development Course
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- CONTACT -->
-<section class="contact" id="contact">
-
-    <h2 class="section-title">
-        Let's Connect
-    </h2>
-
-    <p>
-        Open to Data Analyst internship and career opportunities.
-    </p>
-
-    <br>
-
-    <a href="https://github.com/khanjamal2307-ops"
-       target="_blank">
-        GitHub
-    </a>
-
-    <a href="#"
-       target="_blank">
-        LinkedIn
-    </a>
-
-    <a href="mailto:your-email@example.com">
-        Email
-    </a>
-
-</section>
-
-
-<!-- FOOTER -->
-<footer>
-
-    <p>
-        © 2026 Jamal Khan | Data Analyst Portfolio
-    </p>
-
-</footer>
+    <script src="script.js"></script>
 
 </body>
-  </html>
+
+</html>
+```
